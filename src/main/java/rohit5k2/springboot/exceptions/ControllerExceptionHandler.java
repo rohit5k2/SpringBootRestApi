@@ -1,4 +1,4 @@
-package rohit5k2.springboot.Exceptions;
+package rohit5k2.springboot.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

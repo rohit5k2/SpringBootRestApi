@@ -1,4 +1,4 @@
-package rohit5k2.springboot.Exceptions;
+package rohit5k2.springboot.exceptions;
 
 public class BaseException extends Exception implements IExceptionEntity{
     protected ExceptionCodes.Codes code = ExceptionCodes.Codes.BaseException;

@@ -1,4 +1,4 @@
-package rohit5k2.springboot.Exceptions;
+package rohit5k2.springboot.exceptions;
 
 interface IExceptionEntity {
     ExceptionEntity getExceptionEntity();

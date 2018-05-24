@@ -8,9 +8,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
-import rohit5k2.springboot.Exceptions.BaseException;
-import rohit5k2.springboot.Exceptions.DBAccessException;
-import rohit5k2.springboot.Exceptions.ParameterException;
+import rohit5k2.springboot.exceptions.BaseException;
+import rohit5k2.springboot.exceptions.DBAccessException;
+import rohit5k2.springboot.exceptions.ParameterException;
 import rohit5k2.springboot.dbaccess.repo.StudentRepo;
 import rohit5k2.springboot.models.Student;
 
@@ -133,12 +133,5 @@ public class StudentController {
         }
         else
             throw new ParameterException(null);
-    }
-
-    private void test(){
-        Objects.isNull(null);
-
-        List<String> s =  new ArrayList<>();
-        System.out.println(5);
     }
 }
