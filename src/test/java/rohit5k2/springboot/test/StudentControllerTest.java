@@ -28,7 +28,7 @@ public class StudentControllerTest {
 
     @Test
     public void getStudentByName() throws Exception {
-        mockMvc.perform(MockMvcRequestBuilders.get("/student/getbyname?name=rohit").accept(MediaType.APPLICATION_JSON))
+        mockMvc.perform(MockMvcRequestBuilders.get("/student/firstname/rohit").accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
     }
 }

@@ -27,6 +27,6 @@ public class BaseException extends Exception implements IExceptionEntity{
      * @return
      */
     public ExceptionEntity getExceptionEntity() {
-        return new ExceptionEntity(getCode(), getMessage());
+        return new ExceptionEntity(getCode().value, getMessage());
     }
 }

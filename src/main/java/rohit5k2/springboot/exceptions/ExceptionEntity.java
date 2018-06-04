@@ -1,15 +1,15 @@
 package rohit5k2.springboot.exceptions;
 
 public class ExceptionEntity {
-    private ExceptionCodes.Codes code = ExceptionCodes.Codes.Unknown;
+    private int code = ExceptionCodes.Codes.Unknown.value;
     private String message = "An error occured.";
 
-    public ExceptionEntity(ExceptionCodes.Codes code, String message){
+    public ExceptionEntity(int code, String message){
         this.code = code;
         this.message = message;
     }
 
-    public ExceptionCodes.Codes getCode() {
+    public int getCode() {
         return code;
     }
 
